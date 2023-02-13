@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d9d2d0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for Navigation component */
+
+nav {
+  background-color: #475956;
+  position: fixed;
+  width: 100%;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #475956;
+  padding-top: 10px;
+  width: 850px;
+  margin: 0 auto; 
+  
+
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;  
+  padding-left: 55px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+.topnav a.active {
+  background-color: #6F461F;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.logo-image {
+  width: 100%;
+  height: 40px;
+}
+
+.img-fluid {
+  padding: 0;
+}
+
+/* Search Container */
+
+.topnav .search-container {
+  float: right;
+  padding: 5px;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ #wrapper {
+   position: relative;
+   display: flex;
+   width: 100%;
+   height: auto;
+   flex-direction: column;
+   margin-top: 100px;
+
+ 
+ }
+
+.div1 {
+  background-color: #d0c2b9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  font-size: 1.4rem;
+  padding: 10px;
+
+}
+
+.faqs{
+  background-color: #d0c2b9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.flex-item-left {
+  padding: 10px;
+  margin: auto;
+  flex: 50%;
+
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%
+
+}
+
+.virtualphoto{
+  width: 75%;
+  height: auto;
+}
+
+.div2 {
+  background-color: #d9d2d0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  font-size: 1.4rem;
+  padding: 10px;
+  padding-bottom: 125px;
+ 
+
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 100px;
+
+}
+
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto; 
+ 
+}
+
+/* Services page styling */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #d0c2b9;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Pricing Table styles */
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #475956;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #595959;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+.socialmedia {
+  background-color: #798c89;
+  position: fixed;
+
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #475956;
+  color: white;
+  text-align: center;
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .topnav {
+    width: 100%;
+
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: relative;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+  .contactinfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+  }
+
+  /* Search Container */
+
+  .topnav .search-container {
+    display: flex;
+    position: relative;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding-top: 85px;
+  }
+
+  .div1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align:justify;
+  }
+
+  .faqs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    text-align:justify;
+  }
+
+  #virtualphoto{
+    width: 75%;
+    height: auto;
+
+  }
+
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    padding-bottom: 125px;
+    margin: 0;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
+  .columns {
+    width: 100%;
+  }
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+    margin: 0 auto;
+  }
+}
+

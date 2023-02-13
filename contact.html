@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Admin - contact page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Sign up right now and get the administrative support online that you deserve and achieve amazing results">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="services.html">
+
+        <img
+          src="images/virtualadminlogo.jpg"
+          width="100" height="35"
+          alt="virtual business logo"
+
+        />
+
+    </a>
+        <a href="index.html" >About Us</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html" class="active">Contact</a>
+        <!-- <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form> -->
+            <a href="#myTopnav" class="icon" aria-label="bars_link" onclick="myFunction()">
+              <em class="fa fa-bars"></em>
+            </a>
+        <!-- </div> -->
+    </div>
+
+  </nav>
+
+
+    <div class="div1"></div>
+        <div class="contactinfo">
+         <main>
+       
+    
+
+            <form action="contact.php" method="post" class="contactinfo">
+              <h1>Tell us about your self</h1>
+              <p>Required fields are marked with an asterisk *</p>
+    
+            <label for="myName">* Name:</label>
+            <input type="text" id="myName" name="myName" required="required"><br>
+    
+            <label for="myEmail">* Email:</label>
+            <input type="email" id="myEmail" name="myEmail" placeholder="myname@example.com" required="required"><br>
+
+            <label for="phone">* Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+            <label for="myReferral">How did you hear about us?</label>
+            <input type="text" name="myReferral" id="myReferral" list="referral"><br>
+            <datalist id="referral" >
+                <option value="Google"></option>
+                <option value="Bing"></option>
+                <option value="Facebook"></option>
+                <option value="Friend"></option>
+                <option value="Radio Ad"></option>
+            </datalist>
+            <label for="myComments">* Tell us about you might need help with:</label>
+            <textarea name="myComments" id="myComments" cols="20" rows="2"></textarea>
+    
+            <input type="submit" value="Send Now">
+           </form>
+          </main>
+     
+    
+        </div>
+
+        <div class="socialmedia">
+    </div>
+
+
+
+    <div class="footer">
+  <p>Copyright &copy; 2022 Virtual Admin <br>Michael Roman </p>
+    </div>
+    
+</body>
+</html>
